@@ -11,6 +11,12 @@
     "prebuild": "npm run typegen",
     "typegen": "sanity schema extract --path ./sanity/extract.json && sanity typegen generate"
   },
+  "packageManager": "npm@10.5.2",
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom",
+    "next": "$next"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.4",
@@ -26,7 +32,7 @@
     "easymde": "^2.18.0",
     "lucide-react": "^0.471.1",
     "nanoid": "^5.0.9",
-    "next": "^15.2.0-canary.15",
+    "next": "^15.1.5",
     "next-auth": "^5.0.0-beta.25",
     "next-sanity": "^9.8.29-canary.0",
     "react": "^19.0.0",
